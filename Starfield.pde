@@ -12,7 +12,6 @@ void setup()
 }
 void draw()
 {
-	
 	for(int i=0; i < star.length; i++){
 		star[i].show();
 		star[i].move();
@@ -71,8 +70,8 @@ class OddballParticle implements Particle
  		ellipse((float)myX, (float)myY, 100, 100);
  	}
 	public void move(){
- 		myX = (float)Math.cos(angle*speed);
- 		myY = (float)Math.sin(angle*speed) + myY;
+ 		myX = (float)Math.sin(angle*speed);
+ 		myY = (float)Math.cos(angle*speed) + myY;
  	}
 
 }
